@@ -1,0 +1,69 @@
+{
+  "documents": [
+    {
+      "id": "ndmp-2026",
+      "title": "National Disaster Management Plan 2026",
+      "url": "https://library.ndma.gov.pk/storage/uploads/doc-files/National_Disaster_Management_Plan_2026.pdf",
+      "publisher": "NDMA",
+      "domain": "disaster",
+      "year": 2026,
+      "lang": "en"
+    },
+    {
+      "id": "ndrrs-2025-2030",
+      "title": "National Disaster Risk Reduction Strategy 2025-2030",
+      "url": "https://www.ndma.gov.pk/storage/plans/July2025/x1do0TGLbZH0sI0iQoIW.pdf",
+      "publisher": "NDMA",
+      "domain": "disaster",
+      "year": 2025,
+      "lang": "en"
+    },
+    {
+      "id": "monsoon-cp-2025",
+      "title": "Monsoon Contingency Plan 2025",
+      "url": "https://www.ndma.gov.pk/storage/plans/June2025/yMhAUWuWvqAWSzGylIbY.pdf",
+      "publisher": "NDMA",
+      "domain": "disaster",
+      "year": 2025,
+      "lang": "en"
+    },
+    {
+      "id": "floods-roadmap-2025",
+      "title": "National Roadmap for Resilience to Floods",
+      "url": "https://www.ndma.gov.pk/storage/publications/September2025/5a7DeS9RPoaFUxreIcmm.pdf",
+      "publisher": "NDMA",
+      "domain": "disaster",
+      "year": 2025,
+      "lang": "en"
+    },
+    {
+      "id": "nap-2023",
+      "title": "National Adaptation Plan of Pakistan 2023",
+      "url": "https://www.ndma.gov.pk/storage/plans/July2024/qkng0sNom2LgAJqJ3Qy4.pdf",
+      "publisher": "Ministry of Climate Change (NDMA mirror)",
+      "domain": "policy",
+      "year": 2023,
+      "lang": "en"
+    },
+    {
+      "id": "nccp-2021",
+      "title": "National Climate Change Policy 2021",
+      "url": "https://mocc.gov.pk/SiteImage/Policy/NCCP%20Report.pdf",
+      "publisher": "Ministry of Climate Change",
+      "domain": "policy",
+      "year": 2021,
+      "lang": "en"
+    },
+    {
+      "id": "ndc-3.0-2025",
+      "title": "Pakistan Nationally Determined Contribution 3.0 (2025)",
+      "url": "https://unfccc.int/sites/default/files/2025-09/Pakistan_NDC3.0_24%20Sep.pdf",
+      "publisher": "UNFCCC",
+      "domain": "policy",
+      "year": 2025,
+      "lang": "en",
+      "manual": true,
+      "note": "UNFCCC is behind Incapsula bot protection - download manually in a browser and drop into data/raw/ndc-3.0-2025.pdf"
+    }
+  ]
+}

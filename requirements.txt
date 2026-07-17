@@ -1,0 +1,15 @@
+# Mohafiz — Week 1 dependencies (CPU-only torch is fine at this corpus scale)
+docling
+FlagEmbedding
+qdrant-client
+ragas
+# ragas 0.4.3 imports legacy langchain_community.chat_models paths — needs the 0.3.x line.
+# If W3's langgraph demands langchain-core>=1, split evals into their own venv/extra.
+langchain<1
+langchain-core<1
+langchain-community<0.4
+langchain-groq<1
+langchain-openai<1
+groq
+python-dotenv
+httpx

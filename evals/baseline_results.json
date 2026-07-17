@@ -1,0 +1,10 @@
+{
+  "n": 25,
+  "hit@5": 1.0,
+  "MRR@10": 0.8833,
+  "config": {
+    "retriever": "dense",
+    "model": "BAAI/bge-m3",
+    "max_chunk_tokens": 512
+  }
+}
