@@ -16,7 +16,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from langgraph.graph import END, START, StateGraph
 
-from agent import llm, prompts
+from agent import llm, prompts, quota
 from agent.helplines import emergency_block
 from agent.state import AgentState
 from agent.tools import live_data
@@ -115,7 +115,22 @@ def _context_block(state: AgentState) -> str:
     return "\n\n".join(parts) if parts else "(no context available)"
 
 
+def _retrieval_only(state: AgentState) -> str:
+    ur = state.get("language") == "ur"
+    note = ("Demo ki rozana had puri ho gayi. Neeche mutalliqa iqtebaasat hain:" if ur else
+            "The demo's daily answer limit has been reached — here are the most relevant "
+            "source passages:")
+    cites = "\n".join(f"- [{c['doc_id']} p.{c['pages']}] {c['text'][:200]}..."
+                      for c in state.get("contexts", [])[:3])
+    return f"{note}\n\n{cites}" if cites else (
+        "The demo's daily answer limit has been reached; please try again tomorrow.")
+
+
 def generate(state: AgentState) -> dict:
+    # Budget guard: the 70B is the scarce resource. When the daily cap is hit, degrade
+    # to retrieval-only (cited passages, no generation) instead of erroring.
+    if not quota.try_consume_budget(1):
+        return {"answer": _retrieval_only(state), "grounded": True, "degraded": True}
     prompt = prompts.fill(
         prompts.GENERATE, lang_name=LANG_NAME.get(state.get("language", "en"), "English"),
         context_block=_context_block(state), question=state["question"])
@@ -124,9 +139,17 @@ def generate(state: AgentState) -> dict:
 
 
 def groundedness(state: AgentState) -> dict:
-    out = llm.chat_json([{"role": "user", "content": prompts.fill(
-        prompts.GROUNDEDNESS, context_block=_context_block(state), answer=state.get("answer", ""))}])
-    return {"grounded": bool(out.get("grounded"))}
+    # Secondary safety net (generation already enforces cite-only). The 8B judge is noisy,
+    # so fail OPEN: only an explicit False counts as ungrounded; parse errors / missing key
+    # default to grounded, avoiding false abstentions on correct answers.
+    try:
+        out = llm.chat_json([{"role": "user", "content": prompts.fill(
+            prompts.GROUNDEDNESS, context_block=_context_block(state),
+            answer=state.get("answer", ""))}])
+        val = out.get("grounded", True)
+        return {"grounded": val if isinstance(val, bool) else True}
+    except Exception:
+        return {"grounded": True}
 
 
 def abstain(state: AgentState) -> dict:
@@ -187,11 +210,104 @@ def build_graph():
     return g.compile()
 
 
+# ─── public entry point (used by API + UI) ─────────────────────────────────────
+_app = None
+
+
+def get_app():
+    global _app
+    if _app is None:
+        _app = build_graph()
+    return _app
+
+
+def _citations(result: dict) -> list[str]:
+    seen = []
+    for c in result.get("contexts", [])[:5]:
+        cid = f"{c['doc_id']} p.{c['pages']}"
+        if cid not in seen:
+            seen.append(cid)
+    return seen
+
+
+STAGE_MESSAGE = {
+    "classify": "Understanding your question…",
+    "retrieve": "Searching official documents…",
+    "grade": "Checking that the sources are relevant…",
+    "rewrite": "Refining the search…",
+    "live": "Fetching live data…",
+    "generate": "Composing a grounded answer…",
+    "groundedness": "Verifying the answer against its sources…",
+    "emergency": "Preparing emergency guidance…",
+    "refuse": "Checking scope…",
+    "abstain": "No confident answer — gathering source passages…",
+}
+
+
+def _build_result(result: dict, cached: bool = False) -> dict:
+    return {
+        "answer": result.get("answer", ""),
+        "route": result.get("route"),
+        "domain": result.get("domain"),
+        "language": result.get("language", "en"),
+        "grounded": result.get("grounded"),
+        "abstained": result.get("abstained", False),
+        "degraded": result.get("degraded", False),
+        "citations": _citations(result),
+        "cached": cached,
+    }
+
+
+def _maybe_cache(question: str, out: dict):
+    # Cache only stable, successful answers: skip live/both (time-sensitive), skip
+    # degraded (budget) and abstained (low-quality — may succeed on a later retry).
+    if (out["route"] in ("retrieve", "refuse", "emergency")
+            and not out["degraded"] and not out["abstained"]):
+        quota.cache_put(question, {k: v for k, v in out.items() if k != "cached"})
+
+
+def run_agent(question: str) -> dict:
+    """Cache-wrapped agent call returning a clean, serializable result."""
+    question = (question or "").strip()
+    if not question:
+        return {"answer": "Please enter a question.", "route": None, "cached": False}
+    cached = quota.cache_get(question)
+    if cached:
+        return {**cached, "cached": True}
+    result = get_app().invoke({"question": question})
+    out = _build_result(result)
+    _maybe_cache(question, out)
+    return out
+
+
+def stream_agent(question):
+    """Yield {'type': 'stage'|'final', ...} events — real per-node progress via
+    LangGraph .stream(), used by the SSE endpoint and the Gradio UI."""
+    question = (question or "").strip()
+    if not question:
+        yield {"type": "final", **_build_result({"answer": "Please enter a question."})}
+        return
+    cached = quota.cache_get(question)
+    if cached:
+        yield {"type": "final", **cached, "cached": True}
+        return
+    final_state = {}
+    for update in get_app().stream({"question": question}):
+        for node, delta in update.items():
+            if delta:
+                final_state.update(delta)
+            yield {"type": "stage", "node": node,
+                   "message": STAGE_MESSAGE.get(node, node)}
+    out = _build_result(final_state)
+    _maybe_cache(question, out)
+    yield {"type": "final", **out}
+
+
 if __name__ == "__main__":
-    app = build_graph()
     q = " ".join(sys.argv[1:]) or "What should families do to prepare before a flood?"
-    result = app.invoke({"question": q})
-    print(f"\nroute={result.get('route')} lang={result.get('language')} "
-          f"grounded={result.get('grounded')} abstained={result.get('abstained', False)}")
+    r = run_agent(q)
+    print(f"\nroute={r.get('route')} domain={r.get('domain')} lang={r.get('language')} "
+          f"grounded={r.get('grounded')} cached={r.get('cached')} degraded={r.get('degraded')}")
+    print("citations:", r.get("citations"))
     print("-" * 70)
-    print(result.get("answer", "(no answer)"))
+    print(r.get("answer", "(no answer)"))

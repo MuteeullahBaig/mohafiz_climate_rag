@@ -24,7 +24,7 @@ def main():
     for c, s in zip(chunks, sparse):
         assert c["chunk_id"] == s["chunk_id"], f"chunk order mismatch at {c['chunk_id']}"
 
-    client = QdrantClient(path=config.QDRANT_PATH)
+    client = config.qdrant_client()
     if client.collection_exists(config.COLLECTION_V2):
         client.delete_collection(config.COLLECTION_V2)
     client.create_collection(

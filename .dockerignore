@@ -1,0 +1,10 @@
+.venv/
+data/
+wandb/
+__pycache__/
+*.pyc
+.git/
+.env
+evals/
+*.log
+scratchpad/

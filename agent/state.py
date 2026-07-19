@@ -22,3 +22,4 @@ class AgentState(TypedDict, total=False):
     grounded: Optional[bool]   # Self-RAG groundedness verdict
     regens: int                # regeneration attempts used
     abstained: bool
+    degraded: bool             # budget exhausted -> retrieval-only degradation

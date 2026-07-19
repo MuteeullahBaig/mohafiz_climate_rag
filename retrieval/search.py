@@ -23,7 +23,7 @@ class DenseSearcher:
 
     def __init__(self):
         self.model = BGEM3FlagModel(config.EMBED_MODEL, use_fp16=_USE_GPU)
-        self.client = QdrantClient(path=config.QDRANT_PATH)
+        self.client = config.qdrant_client()
 
     def search(self, query: str, k: int = 5) -> list[dict]:
         vec = self.model.encode(
@@ -48,7 +48,7 @@ class Retriever:
         self.mode = mode
         self.rerank = rerank
         self.model = BGEM3FlagModel(config.EMBED_MODEL, use_fp16=_USE_GPU)
-        self.client = QdrantClient(path=config.QDRANT_PATH)
+        self.client = config.qdrant_client()
         self._reranker = None  # lazy — 2.3GB model
 
     @property

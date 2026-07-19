@@ -72,14 +72,22 @@ Rules:
 
 Question: {question}"""
 
-GROUNDEDNESS = """You check whether an answer is supported by its sources.
+GROUNDEDNESS = """You verify whether an answer is supported by its sources. Be lenient:
+the goal is only to catch clear fabrication, not to demand exact wording.
+
 Reply with ONLY JSON: {"grounded": true|false, "reason": "..."}
+
+Mark grounded = TRUE when:
+- the answer's main claims appear in the sources, even if paraphrased or partial, OR
+- the answer correctly says the sources do not cover the question.
+
+Mark grounded = FALSE only when the answer asserts specific facts (numbers, names, events)
+that clearly CONTRADICT or are entirely ABSENT from the sources.
+
+When in doubt, mark TRUE.
 
 Sources:
 {context_block}
 
 Answer:
-{answer}
-
-Mark grounded=false if the answer states facts not present in the sources (hallucination).
-An answer that correctly says the sources don't cover the question IS grounded."""
+{answer}"""

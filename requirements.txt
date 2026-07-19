@@ -1,4 +1,5 @@
-# Mohafiz — Week 1 dependencies (CPU-only torch is fine at this corpus scale)
+# Mohafiz — full dev/ingest/eval deps (CPU-only torch is fine at this corpus scale).
+# For the deployed serving container, see the lean requirements-deploy.txt.
 docling
 FlagEmbedding
 qdrant-client
@@ -14,3 +15,10 @@ groq
 python-dotenv
 httpx
 wandb
+# W3 agent + W5 serving
+langgraph
+fastapi
+uvicorn[standard]
+gradio
+slowapi
+sse-starlette

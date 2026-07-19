@@ -5,13 +5,24 @@ preparedness, climate policy, and climate-smart agriculture — grounded in offi
 (NDMA, Ministry of Climate Change) with citations, plus live-data tools for weather,
 earthquakes, and disaster alerts.
 
-> Status: Weeks 1–4 in place — ingestion + eval harness, hybrid retrieval with reranking,
-> the LangGraph agent (router, CRAG, groundedness, live tools), and the climate-smart
-> agriculture module with domain routing and a bulletin-freshness pipeline. Public UI and
-> the deployed demo link land in Week 5.
+> Status: Weeks 1–5 complete — ingestion + eval harness, hybrid retrieval with reranking,
+> the LangGraph agent (router, CRAG, groundedness, live tools), the climate-smart
+> agriculture module, and the **deployable serving stack**: a FastAPI service (JSON + SSE),
+> a Gradio chat UI, a quota-protection layer, and a Docker image for Hugging Face Spaces.
+> Deployment guide: [DEPLOY.md](DEPLOY.md). _(Live demo URL: add after first deploy.)_
 >
 > Corpus: 10 official documents (NDMA, Ministry of Climate Change, PMD Agromet, Punjab
 > Agriculture) across three domains — disaster, policy, agriculture — → 2,082 section-aware chunks.
+
+## Run it
+
+```powershell
+# after ingest (see Setup) and with GROQ_API_KEY in .env:
+.venv\Scripts\python -m uvicorn api.main:app --port 7860   # chat UI at http://localhost:7860
+```
+Endpoints: `GET /api/health`, `GET /api/alerts`, `POST /api/ask`, `GET /api/ask/stream` (SSE).
+Free-tier survival is built in: per-IP rate limiting (slowapi), a normalized response cache,
+and a daily LLM budget that degrades to retrieval-only instead of erroring.
 
 ## Agent flow
 
@@ -110,8 +121,11 @@ statistics.
 ```
 ingestion/   download · parse (Docling) · chunk · embed_sparse · index_v2 · refresh_bulletins
 retrieval/   search.py — DenseSearcher (v1) + Retriever (dense/sparse/hybrid ±rerank)
-agent/       graph.py (LangGraph) · llm · prompts · state · helplines · tools/live_data
+agent/       graph.py (LangGraph) · llm · prompts · state · helplines · quota · tools/live_data
+api/         main.py — FastAPI (JSON + SSE) with the Gradio UI mounted
+ui/          app.py — Gradio chat (citations panel + live-alerts strip)
 evals/       golden/ · run_retrieval_eval (ablations+W&B) · run_ragas · run_routing_eval
+Dockerfile · DEPLOY.md · .github/workflows/ci.yml (graph-compile + routing eval gate)
 ```
 
 ## Setup
