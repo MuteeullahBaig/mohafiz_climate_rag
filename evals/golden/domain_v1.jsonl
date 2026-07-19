@@ -1,0 +1,12 @@
+{"qid": "dom-001", "question": "What should authorities do when a flood warning is issued?", "expected_domain": "disaster", "draft": true}
+{"qid": "dom-002", "question": "How are relief camps organized and stocked during floods?", "expected_domain": "disaster", "draft": true}
+{"qid": "dom-003", "question": "What conditions can trigger a glacial lake outburst flood in Gilgit-Baltistan?", "expected_domain": "disaster", "draft": true}
+{"qid": "dom-004", "question": "Which agencies coordinate the national monsoon contingency response?", "expected_domain": "disaster", "draft": true}
+{"qid": "dom-005", "question": "When is the recommended time to sow wheat in Punjab?", "expected_domain": "agriculture", "draft": true}
+{"qid": "dom-006", "question": "What is the sowing and harvest window for rice in Pakistan?", "expected_domain": "agriculture", "draft": true}
+{"qid": "dom-007", "question": "What crop-specific advisory does the agromet bulletin give farmers this week?", "expected_domain": "agriculture", "draft": true}
+{"qid": "dom-008", "question": "How is soil temperature relevant to crop sowing decisions?", "expected_domain": "agriculture", "draft": true}
+{"qid": "dom-009", "question": "What does the National Adaptation Plan say about water security?", "expected_domain": "policy", "draft": true}
+{"qid": "dom-010", "question": "Which sector is the largest source of greenhouse gas emissions in Pakistan?", "expected_domain": "policy", "draft": true}
+{"qid": "dom-011", "question": "What is the overarching goal of the National Climate Change Policy?", "expected_domain": "policy", "draft": true}
+{"qid": "dom-012", "question": "Which international climate frameworks is Pakistan a signatory to?", "expected_domain": "policy", "draft": true}

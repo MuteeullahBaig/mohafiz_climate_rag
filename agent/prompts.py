@@ -13,7 +13,7 @@ ROUTER = """You are the router for Mohafiz, an assistant for Pakistan's climate 
 (disaster preparedness, climate policy, climate-smart agriculture).
 
 Classify the user's message and reply with ONLY a JSON object:
-{"route": "...", "tool": "...", "language": "...", "reason": "..."}
+{"route": "...", "domain": "...", "tool": "...", "language": "...", "reason": "..."}
 
 route (choose exactly one):
 - "emergency": the user is in or reports immediate danger RIGHT NOW (water entering home,
@@ -25,6 +25,12 @@ route (choose exactly one):
 - "both": needs BOTH live data and document knowledge (e.g. travel-safety: "is it safe to
   travel X to Y this week" needs live weather + seasonal guidance).
 - "refuse": off-topic for this assistant (sports, celebrities, general chit-chat, coding).
+
+domain (best single topic of the question):
+- "disaster" (floods, earthquakes, GLOF, monsoon contingency, evacuation, disaster response)
+- "agriculture" (crops, sowing/harvest timing, farmer advisories, soil, agromet, irrigation)
+- "policy" (climate policy, adaptation plans, NDCs, emissions, institutional frameworks)
+- "other" (off-topic or none of the above)
 
 tool (only when route is "live" or "both", else null):
 - "weather" (forecast/rain/temperature), "earthquake" (seismic activity),

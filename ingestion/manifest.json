@@ -64,6 +64,42 @@
       "lang": "en",
       "manual": true,
       "note": "UNFCCC is behind Incapsula bot protection - download manually in a browser and drop into data/raw/ndc-3.0-2025.pdf"
+    },
+    {
+      "id": "namc-weekly-2026w01",
+      "title": "NAMC Weekly Weather and Crop Bulletin (29 Dec 2025 - 4 Jan 2026)",
+      "url": "https://weather.gov.pk/storage/uploads/namc/bulletins/pdfs/Weekly_Bulletin%2029%20Dec-4%20Jan,%202026.pdf",
+      "publisher": "PMD National Agromet Centre",
+      "domain": "agriculture",
+      "year": 2026,
+      "lang": "en"
+    },
+    {
+      "id": "namc-weekly-39",
+      "title": "NAMC Weekly Weather and Crop Bulletin No. 39",
+      "url": "https://namc.pmd.gov.pk/assets/weekly-bulletins/670384d14a6deWeekly_Bulletin-39.pdf",
+      "publisher": "PMD National Agromet Centre",
+      "domain": "agriculture",
+      "year": 2024,
+      "lang": "en"
+    },
+    {
+      "id": "agripunjab-rabi-2015",
+      "title": "Punjab Rabi Crops Book 2015-16",
+      "url": "https://agripunjab.gov.pk/system/files/RABI%20BOOK%202015-16_0.pdf",
+      "publisher": "Agriculture Department, Government of the Punjab",
+      "domain": "agriculture",
+      "year": 2016,
+      "lang": "en"
+    },
+    {
+      "id": "agripunjab-crop-calendar",
+      "title": "Punjab Crops Life Calendar (wheat, rice, cotton, sugarcane, maize)",
+      "url": "https://crs-agripunjab.punjab.gov.pk/system/files/Crops%20Life%20Calendar2.pdf",
+      "publisher": "Crop Reporting Service, Agriculture Department, Government of the Punjab",
+      "domain": "agriculture",
+      "year": 2020,
+      "lang": "en"
     }
   ]
 }

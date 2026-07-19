@@ -27,7 +27,8 @@ RESULTS = Path(__file__).parent / "ablation_results.jsonl"
 
 # "all" deliberately matches only retrieval sets — routing_/unanswerable_ files
 # have different schemas and are consumed by their own eval scripts.
-SETS = {"easy": "en_v1.jsonl", "hard": "en_v1_hard.jsonl", "all": "en_v1*.jsonl"}
+SETS = {"easy": "en_v1.jsonl", "hard": "en_v1_hard.jsonl", "agri": "en_agri.jsonl",
+        "all": "en_*.jsonl"}
 
 
 def load_golden(pattern: str = "*.jsonl") -> list[dict]:

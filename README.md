@@ -5,9 +5,13 @@ preparedness, climate policy, and climate-smart agriculture — grounded in offi
 (NDMA, Ministry of Climate Change) with citations, plus live-data tools for weather,
 earthquakes, and disaster alerts.
 
-> Status: Weeks 1–3 in place — ingestion + eval harness, hybrid retrieval with reranking,
-> and the LangGraph agent (router, CRAG, groundedness, live tools). Agriculture module,
-> public UI, and the deployed demo link land in Weeks 4–5.
+> Status: Weeks 1–4 in place — ingestion + eval harness, hybrid retrieval with reranking,
+> the LangGraph agent (router, CRAG, groundedness, live tools), and the climate-smart
+> agriculture module with domain routing and a bulletin-freshness pipeline. Public UI and
+> the deployed demo link land in Week 5.
+>
+> Corpus: 10 official documents (NDMA, Ministry of Climate Change, PMD Agromet, Punjab
+> Agriculture) across three domains — disaster, policy, agriculture — → 2,082 section-aware chunks.
 
 ## Agent flow
 
@@ -65,14 +69,32 @@ Coverage 25/25 (recall 24/25). Judge = `llama-3.1-8b-instant` on its own token q
 answers cached so re-judging costs no generation. (First attempt scored only 4/25 before
 the 70B daily budget was exhausted mid-run — the split-model design is the fix.)
 
-### Agent — W3 routing accuracy (10-case golden set)
+### Agent — W3/W4 routing (golden sets)
 
-| routing accuracy | tool-selection accuracy |
-|---|---|
-| 10/10 (1.000) | 5/5 (1.000) |
+| route accuracy (10) | tool-selection (5) | domain accuracy (12) |
+|---|---|---|
+| 10/10 (1.000) | 5/5 (1.000) | 11/12 (0.917) |
 
 All five routes correct (retrieve / live / both / emergency / refuse), including Roman-Urdu
-emergency detection and travel-safety ("both") classification.
+emergency detection and travel-safety ("both") classification. Domain routing classifies
+disaster / agriculture / policy for metadata-aware retrieval; the one miss is a borderline
+institutional-vs-disaster case.
+
+### Agriculture module — W4 retrieval (agri golden set, hybrid+rerank)
+
+| hit@5 | MRR@10 |
+|---|---|
+| 8/9 (0.889) | 0.685 |
+
+Agri corpus: 2 PMD agromet bulletins + Punjab Rabi crops book + crops calendar. A
+`refresh_bulletins.py` freshness job scrapes the NAMC listing for the newest weekly
+bulletin and re-ingests it — the "latest data" half of a historical+latest corpus.
+
+**Honest coverage note:** free Pakistani agri sources skew quantitative (agromet metrics,
+crop-production estimates) rather than agronomic "how-to" prose — the package-of-practices
+guides were only on Indian sites (excluded). The crops calendar is a visual grid that OCR
+could not turn into usable text. Agri Q&A therefore leans on bulletin advisories and crop
+statistics.
 
 ## Live-data tools (all keyless/free)
 
@@ -86,7 +108,7 @@ emergency detection and travel-safety ("both") classification.
 ## Repo layout
 
 ```
-ingestion/   download · parse (Docling) · chunk · embed_index / embed_sparse · index_v2
+ingestion/   download · parse (Docling) · chunk · embed_sparse · index_v2 · refresh_bulletins
 retrieval/   search.py — DenseSearcher (v1) + Retriever (dense/sparse/hybrid ±rerank)
 agent/       graph.py (LangGraph) · llm · prompts · state · helplines · tools/live_data
 evals/       golden/ · run_retrieval_eval (ablations+W&B) · run_ragas · run_routing_eval

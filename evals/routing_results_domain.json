@@ -1,0 +1,126 @@
+{
+  "set": "domain",
+  "domain_accuracy": 0.9167,
+  "detail": [
+    {
+      "qid": "dom-001",
+      "checks": {
+        "domain": {
+          "expected": "disaster",
+          "got": "disaster",
+          "ok": true
+        }
+      }
+    },
+    {
+      "qid": "dom-002",
+      "checks": {
+        "domain": {
+          "expected": "disaster",
+          "got": "disaster",
+          "ok": true
+        }
+      }
+    },
+    {
+      "qid": "dom-003",
+      "checks": {
+        "domain": {
+          "expected": "disaster",
+          "got": "disaster",
+          "ok": true
+        }
+      }
+    },
+    {
+      "qid": "dom-004",
+      "checks": {
+        "domain": {
+          "expected": "disaster",
+          "got": "policy",
+          "ok": false
+        }
+      }
+    },
+    {
+      "qid": "dom-005",
+      "checks": {
+        "domain": {
+          "expected": "agriculture",
+          "got": "agriculture",
+          "ok": true
+        }
+      }
+    },
+    {
+      "qid": "dom-006",
+      "checks": {
+        "domain": {
+          "expected": "agriculture",
+          "got": "agriculture",
+          "ok": true
+        }
+      }
+    },
+    {
+      "qid": "dom-007",
+      "checks": {
+        "domain": {
+          "expected": "agriculture",
+          "got": "agriculture",
+          "ok": true
+        }
+      }
+    },
+    {
+      "qid": "dom-008",
+      "checks": {
+        "domain": {
+          "expected": "agriculture",
+          "got": "agriculture",
+          "ok": true
+        }
+      }
+    },
+    {
+      "qid": "dom-009",
+      "checks": {
+        "domain": {
+          "expected": "policy",
+          "got": "policy",
+          "ok": true
+        }
+      }
+    },
+    {
+      "qid": "dom-010",
+      "checks": {
+        "domain": {
+          "expected": "policy",
+          "got": "policy",
+          "ok": true
+        }
+      }
+    },
+    {
+      "qid": "dom-011",
+      "checks": {
+        "domain": {
+          "expected": "policy",
+          "got": "policy",
+          "ok": true
+        }
+      }
+    },
+    {
+      "qid": "dom-012",
+      "checks": {
+        "domain": {
+          "expected": "policy",
+          "got": "policy",
+          "ok": true
+        }
+      }
+    }
+  ]
+}

@@ -7,6 +7,7 @@ class AgentState(TypedDict, total=False):
     question: str
     # router output
     route: str                 # retrieve | live | both | emergency | refuse
+    domain: str                # disaster | agriculture | policy | other
     tool: Optional[str]        # weather | earthquake | alerts | sitreps | None
     language: str              # en | ur
     # retrieval

@@ -41,7 +41,7 @@ def main():
         n_pages = len(doc.pages)
         n_chars = sum(len(t.text) for t in doc.texts)
         density = n_chars / max(n_pages, 1)
-        flag = "  ⚠ LOW TEXT - likely scanned, needs OCR" if density < LOW_TEXT_CHARS_PER_PAGE else ""
+        flag = "  [!] LOW TEXT - likely scanned, needs OCR" if density < LOW_TEXT_CHARS_PER_PAGE else ""
         print(
             f"  [{entry['id']}] {n_pages} pages, {n_chars:,} chars "
             f"({density:.0f}/page) in {time.time()-t0:.0f}s{flag}"

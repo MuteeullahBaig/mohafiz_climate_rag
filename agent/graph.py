@@ -42,7 +42,10 @@ def classify(state: AgentState) -> dict:
     route = out.get("route", "retrieve")
     if route not in ("emergency", "refuse", "retrieve", "live", "both"):
         route = "retrieve"
-    return {"route": route, "tool": out.get("tool"),
+    domain = out.get("domain", "other")
+    if domain not in ("disaster", "agriculture", "policy", "other"):
+        domain = "other"
+    return {"route": route, "domain": domain, "tool": out.get("tool"),
             "language": "ur" if out.get("language") == "ur" else "en",
             "query_used": state["question"], "rewrites": 0, "regens": 0}
 
