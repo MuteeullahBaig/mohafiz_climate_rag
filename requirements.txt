@@ -13,3 +13,4 @@ langchain-openai<1
 groq
 python-dotenv
 httpx
+wandb

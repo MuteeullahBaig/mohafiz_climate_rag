@@ -1,0 +1,10 @@
+{"qid": "rte-001", "lang": "en", "domain": "routing", "question": "Is there any flood warning in Pakistan right now?", "expected_route": "live", "expected_tool": "alerts", "draft": true}
+{"qid": "rte-002", "lang": "en", "domain": "routing", "question": "What's the weather in Lahore for the next three days?", "expected_route": "live", "expected_tool": "weather", "draft": true}
+{"qid": "rte-003", "lang": "en", "domain": "routing", "question": "Were there any earthquakes near Quetta this week?", "expected_route": "live", "expected_tool": "earthquake", "draft": true}
+{"qid": "rte-004", "lang": "en", "domain": "routing", "question": "What should families do to prepare before a flood arrives?", "expected_route": "retrieve", "expected_tool": null, "draft": true}
+{"qid": "rte-005", "lang": "ur-roman", "domain": "routing", "question": "Paani ghar mein ghus raha hai, hum kya karein?!", "expected_route": "emergency", "expected_tool": null, "draft": true}
+{"qid": "rte-006", "lang": "en", "domain": "routing", "question": "Who won yesterday's PSL match?", "expected_route": "refuse", "expected_tool": null, "draft": true}
+{"qid": "rte-007", "lang": "en", "domain": "routing", "question": "Is it safe to travel from Naran to Babusar Top this week?", "expected_route": "both", "expected_tool": "weather", "draft": true}
+{"qid": "rte-008", "lang": "en", "domain": "routing", "question": "What does the National Adaptation Plan say about groundwater?", "expected_route": "retrieve", "expected_tool": null, "draft": true}
+{"qid": "rte-009", "lang": "en", "domain": "routing", "question": "Is there a recent situation report on how the monsoon is going?", "expected_route": "live", "expected_tool": "sitreps", "draft": true}
+{"qid": "rte-010", "lang": "en", "domain": "routing", "question": "Authorities just told our area to evacuate - what do I do right now?", "expected_route": "emergency", "expected_tool": null, "draft": true}

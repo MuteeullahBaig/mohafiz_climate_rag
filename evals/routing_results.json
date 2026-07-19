@@ -1,0 +1,97 @@
+{
+  "n": 10,
+  "route_accuracy": 1.0,
+  "tool_accuracy": 1.0,
+  "detail": [
+    {
+      "qid": "rte-001",
+      "expected": "live",
+      "got": "live",
+      "route_ok": true,
+      "expected_tool": "alerts",
+      "got_tool": "alerts",
+      "tool_ok": true
+    },
+    {
+      "qid": "rte-002",
+      "expected": "live",
+      "got": "live",
+      "route_ok": true,
+      "expected_tool": "weather",
+      "got_tool": "weather",
+      "tool_ok": true
+    },
+    {
+      "qid": "rte-003",
+      "expected": "live",
+      "got": "live",
+      "route_ok": true,
+      "expected_tool": "earthquake",
+      "got_tool": "earthquake",
+      "tool_ok": true
+    },
+    {
+      "qid": "rte-004",
+      "expected": "retrieve",
+      "got": "retrieve",
+      "route_ok": true,
+      "expected_tool": null,
+      "got_tool": null,
+      "tool_ok": null
+    },
+    {
+      "qid": "rte-005",
+      "expected": "emergency",
+      "got": "emergency",
+      "route_ok": true,
+      "expected_tool": null,
+      "got_tool": null,
+      "tool_ok": null
+    },
+    {
+      "qid": "rte-006",
+      "expected": "refuse",
+      "got": "refuse",
+      "route_ok": true,
+      "expected_tool": null,
+      "got_tool": null,
+      "tool_ok": null
+    },
+    {
+      "qid": "rte-007",
+      "expected": "both",
+      "got": "both",
+      "route_ok": true,
+      "expected_tool": "weather",
+      "got_tool": "weather",
+      "tool_ok": true
+    },
+    {
+      "qid": "rte-008",
+      "expected": "retrieve",
+      "got": "retrieve",
+      "route_ok": true,
+      "expected_tool": null,
+      "got_tool": null,
+      "tool_ok": null
+    },
+    {
+      "qid": "rte-009",
+      "expected": "live",
+      "got": "live",
+      "route_ok": true,
+      "expected_tool": "sitreps",
+      "got_tool": "sitreps",
+      "tool_ok": true
+    },
+    {
+      "qid": "rte-010",
+      "expected": "emergency",
+      "got": "emergency",
+      "route_ok": true,
+      "expected_tool": null,
+      "got_tool": null,
+      "tool_ok": null
+    }
+  ]
+}

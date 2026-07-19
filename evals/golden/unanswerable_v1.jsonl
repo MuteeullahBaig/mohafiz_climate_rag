@@ -1,0 +1,10 @@
+{"qid": "una-001", "lang": "en", "domain": "unanswerable", "question": "What budget did the federal government allocate to NDMA for fiscal year 2027?", "expected_behavior": "abstain", "draft": true}
+{"qid": "una-002", "lang": "en", "domain": "unanswerable", "question": "What is the phone number of the DDMA office in Chitral?", "expected_behavior": "abstain", "draft": true}
+{"qid": "una-003", "lang": "en", "domain": "unanswerable", "question": "What were the actual district-wise rainfall figures recorded in monsoon 2026?", "expected_behavior": "abstain", "draft": true}
+{"qid": "una-004", "lang": "en", "domain": "unanswerable", "question": "Which insurance companies offer flood insurance in Pakistan and at what premium rates?", "expected_behavior": "abstain", "draft": true}
+{"qid": "una-005", "lang": "en", "domain": "unanswerable", "question": "What compensation amount per household was announced for the 2025 flood victims?", "expected_behavior": "abstain", "draft": true}
+{"qid": "una-006", "lang": "en", "domain": "unanswerable", "question": "What are the earthquake building code requirements for high-rise towers in Dubai?", "expected_behavior": "abstain", "draft": true}
+{"qid": "una-007", "lang": "en", "domain": "unanswerable", "question": "What is the current water level at Tarbela Dam right now?", "expected_behavior": "abstain", "note": "no dam-level tool exists - tests tool-boundary honesty", "draft": true}
+{"qid": "una-008", "lang": "en", "domain": "unanswerable", "question": "What did the NDMA chairman say in his most recent press conference?", "expected_behavior": "abstain", "draft": true}
+{"qid": "una-009", "lang": "en", "domain": "unanswerable", "question": "What is the salary structure of PDMA employees?", "expected_behavior": "abstain", "draft": true}
+{"qid": "una-010", "lang": "en", "domain": "unanswerable", "question": "Which mobile app should I download for official disaster alerts and what features does it have?", "expected_behavior": "abstain", "draft": true}

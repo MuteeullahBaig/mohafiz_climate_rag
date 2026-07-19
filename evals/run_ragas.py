@@ -76,7 +76,9 @@ def evaluate_answers(rows: list[dict], judge_model: str):
     from ragas.metrics import Faithfulness, LLMContextPrecisionWithReference, LLMContextRecall
     from ragas.run_config import RunConfig
 
-    judge = LangchainLLMWrapper(ChatGroq(model=judge_model, temperature=0))
+    # max_tokens=4096: context_recall judging emits verbose claim-by-claim JSON that
+    # overruns the default cap on long contexts (LLMDidNotFinishException)
+    judge = LangchainLLMWrapper(ChatGroq(model=judge_model, temperature=0, max_tokens=4096))
     dataset = EvaluationDataset.from_list([{k: v for k, v in r.items() if k != "qid"} for r in rows])
     result = evaluate(
         dataset,
@@ -117,7 +119,7 @@ def main():
         print(f"loaded {len(rows)} cached answers")
     else:
         from run_retrieval_eval import load_golden
-        golden = load_golden()
+        golden = load_golden("en_v1.jsonl")  # RAGAS baseline runs on the easy set only
         if args.limit:
             golden = golden[: args.limit]
         rows = generate_answers(golden, args.k)

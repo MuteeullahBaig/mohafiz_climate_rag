@@ -11,8 +11,8 @@
     ],
     "response":"The 2025 monsoon season in Pakistan was expected to begin around 26-27 June and continue until 15 September [floods-roadmap-2025 p.8], [monsoon-cp-2025 p.24].",
     "reference":"The 2025 monsoon season was expected to begin on 26-27 June, approximately four days earlier than the normal onset, and extend until 15 September 2025.",
-    "faithfulness":0.5,
-    "llm_context_precision_with_reference":1.0,
+    "faithfulness":1.0,
+    "llm_context_precision_with_reference":0.9166666666,
     "context_recall":1.0
   },
   {
@@ -27,8 +27,8 @@
     ],
     "response":"The activities under the contingency plan trigger as soon as a forecast or advisory is issued by NEOC, PMD, FFD, FFC, and PCIW based on the weather forecast or river flow data [monsoon-cp-2025 p.9].",
     "reference":"Activities trigger as soon as a forecast or advisory is issued by NEOC, PMD, FFD, FFC or PCIW based on weather forecasts or river flow data, following which NDMA issues relevant advisories.",
-    "faithfulness":0.8571428571,
-    "llm_context_precision_with_reference":0.9999999999,
+    "faithfulness":0.6666666667,
+    "llm_context_precision_with_reference":1.0,
     "context_recall":1.0
   },
   {
@@ -44,8 +44,8 @@
     "response":"The National Emergency Operations Centre (NEOC) plays a crucial role during the monsoon season. It continuously monitors evolving weather patterns, issues early warnings and impact-based advisories, and enhances preparedness to minimize disaster risks [monsoon-cp-2025 p.[9]]. The NEOC acts as the nerve centre for coordination, real-time information sharing, and decision-making, facilitating inter-agency coordination and providing synthesized intelligence to trigger operational actions [ndmp-2026 p.[47]].",
     "reference":"NEOC continuously monitors evolving weather patterns both within the region and globally to evaluate their potential impact on Pakistan, and issues early warnings.",
     "faithfulness":1.0,
-    "llm_context_precision_with_reference":0.7555555555,
-    "context_recall":1.0
+    "llm_context_precision_with_reference":0.95,
+    "context_recall":null
   },
   {
     "qid":"dis-en-004",
@@ -57,11 +57,11 @@
       "- (1) Establish  temporary  shelters  and  evacuation  centers  equipped  with essential facilities for displaced individuals in urban areas.\n- (2) Ensure  immediate  medical  support  by  establishing  medical  response teams and deploying mobile medical units to affected areas.\n- (3) Provide  emergency  relief  supplies,  including  food,  clean  water  and essential  items,  to  affected  communities  in  coordination  with  relevant departments and organizations.\n- (4) Conduct rapid damage assessments to identify critical infrastructure and prioritize restoration efforts.\n- (5) Implement measures for drainage system cleaning, unclogging and repair to alleviate urban flooding.\n- (6) Coordinate with relevant departments to ensure restoration of essential services such as electricity, water supply and communication networks.\n- (7) Conduct awareness campaigns to educate communities on urban flood risks, safe hygiene practices and disease prevention.\n- (8) Provide  support  for  the  rehabilitation  and  reconstruction  of  damaged houses, public buildings and infrastructure in urban areas.",
       "- (a) Conduct rapid damage assessments to identify priority areas for early recovery interventions, focusing on critical infrastructure and\ncommunity needs.\n- (b) Provide  immediate  support  for  the  restoration  of  water  supply, sanitation and hygiene facilities to prevent waterborne diseases.\n- (c) Support  the  rehabilitation  of  damaged  houses  and  community infrastructure, prioritizing the most vulnerable households.\n- (d) Assist  in  the  recovery  of  agriculture  and  livelihoods  through  the provision of seeds, tools and technical support for quick replanting.\n- (e) Facilitate  the  reestablishment  of  local  markets  and  incomegenerating activities to restore economic stability.\n- (f) Collaborate  with  local  communities  to  develop  and  implement community-based early warning systems for future flood events.\n- (g) Ensure the active participation of affected communities in decision-  making  processes  and  the  planning  of  early  recovery interventions."
     ],
-    "response":"DDMA\/District Administration is responsible for generating the first-tier immediate response to urban floods through collaboration with line departments, Rescue 1122, Civil Defence organization, and trained volunteers [monsoon-cp-2025 p.44].",
+    "response":"DDMA \/ District Administration is responsible for generating the first-tier immediate response to urban floods through collaboration with line departments, Rescue 1122, Civil Defence organization, and trained volunteers [monsoon-cp-2025 p.44].",
     "reference":"The DDMA \/ District Administration is responsible for generating the first-tier response, in collaboration with line departments, Rescue 1122, the Civil Defence organization and trained volunteers.",
     "faithfulness":1.0,
-    "llm_context_precision_with_reference":0.8055555555,
-    "context_recall":null
+    "llm_context_precision_with_reference":0.8333333333,
+    "context_recall":1.0
   },
   {
     "qid":"dis-en-005",
@@ -73,11 +73,11 @@
       "\na., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.Item = Life Jackets. a., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.Scale \/ Person = 100. a., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.NDMA Instructions = 10,000. a., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.25 % of NDMA Instructions = 2,500. a., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.Provincial Level Stock Position = 22,120. a., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.Difference = 19,620. a., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.Procurement Plans = Pre- qualification for procuring Rescue and Relief items for the 2025- 26 financial year is underway.. b., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.Item = Drilling Hammers. b., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.Scale \/ Person = 1800. b., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.NDMA Instructions = 556. b., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.25 % of NDMA Instructions = 139. b., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.Provincial Level Stock Position = 0. b., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.Difference = 139. b., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.Procurement Plans = Pre- qualification for procuring Rescue and Relief items for the 2025- 26 financial year is underway..",
       "\nm., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.Item = First Aid Kits. m., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.Scale \/ Person = 6. m., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.NDMA Instructions = 166,667. m., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.25 % of NDMA Instructions = 41,667. m., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.Provincial Level Stock Position = 3,655. m., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.Difference = 38,012. m., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.Procurement Plans = . n., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.Item = Water Jerry Cans. n., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.Scale \/ Person = 12. n., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.NDMA Instructions = 83,333. n., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.25 % of NDMA Instructions = 20,833. n., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.Provincial Level Stock Position = 0. n., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.Difference = 20,833. n., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.Procurement Plans = . o., Monsoon 2025 Preparatory Actions NDMA's Instructions for Maintaining of Stock Level.Item = Water Cooler."
     ],
-    "response":"NDMA maintains its stocks at strategic locations, and PDMAs are responsible for collecting the stocks once released by NDMA [monsoon-cp-2025 p.46]. NDMA stocks are requisitioned only in case of extreme emergency and with sufficient reaction time [monsoon-cp-2025 p.46]. The distribution of relief items is based on damage and need, with consideration of factors such as total and affected population, relief already provided, and logistical aspects [monsoon-cp-2025 p.54-55].",
+    "response":"NDMA maintains its stocks at strategic locations, and PDMAs are responsible for collecting the stocks once released by NDMA from a particular location [monsoon-cp-2025 p.46]. NDMA stocks will be requisitioned only in case of extreme emergency and with sufficient reaction time [monsoon-cp-2025 p.46]. The distribution of relief items is based on damage and need, with consideration of factors such as total and affected population, relief already provided, and logistical aspects [monsoon-cp-2025 p.54-55].",
     "reference":"NDMA maintains stocks at strategic locations; PDMAs collect the stocks once released. NDMA stocks are requisitioned only in extreme emergency with sufficient reaction time. Distribution of tents at site must be avoided - people should be motivated to come to relief camps.",
-    "faithfulness":null,
-    "llm_context_precision_with_reference":null,
-    "context_recall":null
+    "faithfulness":0.6666666667,
+    "llm_context_precision_with_reference":1.0,
+    "context_recall":1.0
   },
   {
     "qid":"dis-en-006",
@@ -91,9 +91,9 @@
     ],
     "response":"There are 15 districts of Balochistan marked as most severe in drought [monsoon-cp-2025 p.86].",
     "reference":"Fifteen (15) districts of Balochistan are marked as most severe in drought, including Chagai, Nushki, Washuk, Kharan, Pishin, Killa Abdullah, Chaman, Kacchi, Loralai, Panjgur, Kech and Gwadar.",
-    "faithfulness":null,
-    "llm_context_precision_with_reference":null,
-    "context_recall":null
+    "faithfulness":0.5,
+    "llm_context_precision_with_reference":0.9999999999,
+    "context_recall":1.0
   },
   {
     "qid":"dis-en-007",
@@ -107,9 +107,9 @@
     ],
     "response":"Scenario-1 of the Monsoon 2025 visualized contingency scenarios is \"Below Normal Monsoon\", which is considered less likely but must be accounted for in national contingency planning due to its potential impact on agriculture, water availability, and regional drought risks [monsoon-cp-2025 p.29].",
     "reference":"Scenario-1 is a Below Normal Monsoon, considered less likely, but it must be accounted for in national contingency planning due to its potential impact on agriculture, water availability, and regional drought risks.",
-    "faithfulness":null,
-    "llm_context_precision_with_reference":null,
-    "context_recall":null
+    "faithfulness":1.0,
+    "llm_context_precision_with_reference":0.9999999999,
+    "context_recall":1.0
   },
   {
     "qid":"dis-en-008",
@@ -121,11 +121,11 @@
       "18. Visualized Contingency  Scenarios . Monsoon 's visualized  contingency  scenarios, derived from Monsoon Seasonal Outlook for Monsoon 2025 are as under: -\n- a. Scenario-1 (Less Likely) - Below Normal Monsoon .    This scenario, though less likely, must be accounted for as part of national contingency planning due to its potential impact on agriculture, water availability, and regional drought risks. It may unfold as under:\n- (1) Below average rainfall across most regions of the country, particularly in rain-fed  (Barani)  areas  of  Balochistan,  Southern  Punjab  and  parts  of Sindh.\n- (2) Reduced snow and glacier melt due to lower temperatures and diminished Monsoon influence,  leading  to  decreased  river  flows,  especially  in  the Indus and its tributaries.\n- (3) Increased risk of drought-like conditions especially in arid and semi-arid zones such as Tharparkar, Cholistan, and Western Balochistan, impacting agriculture and livestock.\n- (4) Depletion  of  water  reservoirs  creating  challenges  for  irrigation,  urban water supply, and hydropower generation in later months.\n- (5) Increased reliance on groundwater extraction potentially leading to longterm aquifer stress and water quality degradation.\n- b. Scenario- 2 (Most Likely) - Above Normal . It may unfold as under: -\n- (1) Most regions, across the country will experience Above Normal Rains.\n- (2) Increased snow \/ ice melt expected and resultantly higher flows in all rivers will be experienced.\n- (3) Extreme weather patterns i.e. torrential \/ heavy rains, hailstorm, windstorms may develop during the season and are to be expected across the country.\n- (4) Urban flooding in metropolitans  will  be  possible  under  climate  induced heavy precipitation, which is expected.\n- (5) Northern Regions i.e. Northern KP and GB will be prone to development of glacial lakes hence triggering GLOFs.\n- (6) Increased chances of Seasonal Lows.",
       "15. Balochistan Outlook . Balochistan's rainfall distribution will remain uneven. Eastern and Central districts such as Khuzdar, Lasbela, and Washuk are forecasted to receive slightly above-normal rainfall , especially during the later half of the Monsoon. In contrast, Western districts like Quetta, Zhob, and Barkhan are likely to experience near-normal to below-normal rainfall . Despite periodic rains, most of Balochistan may continue to experience arid conditions due to long-standing deficits. However, areas that receive sudden bursts of heavy rain will be at risk for localized flash floods due to low soil absorption and minimal vegetation:-\n- a. Historical  Precipitation .      Balochistan  has  historically  received  very  low Monsoon  rainfall,  especially  in  Central  and  Western  districts;  slightly  higher rainfall is observed in South Eastern areas like Lasbela and Khuzdar.\n- b. Projected  Precipitation .  Future  projections  show  prominent  change,  with increases expected in South Eastern and North Eastern districts.\n- c. Precipitation Anomaly . Slight positive anomalies in the South East suggest a small increase in rainfall, but overall, Balochistan will receive rains in comparison with historical patterns.\n16. Gilgit-Baltistan (GB) Outlook . Northern mountainous territories of GB are forecasted to receive normal to below normal rainfall. In GB, districts such as Astore, Skardu, Hunza, and Gilgit are likely to experience precipitation in late July and August. This may lead to glacial lake outburst floods (GLOFs) at different locations.\nBalochistan Comparative Analysis for Average Precipitation (JAS)\nGB Comparative Analysis for Average Precipitation (JAS)\n17. Azad Jammu & Kashmir AJ&K) Outlook .   In AJ&K, including Muzaffarabad, Neelum Valley, and Rawalakot, isolated heavy rains are forecasted. The rugged terrain and high rainfall intensities  pose  significant  risks  of  landslides  and  riverine  flooding.  These  regions  also contribute to the upper catchment areas of major rivers, affecting downstream water flows in Punjab."
     ],
-    "response":"Gilgit-Baltistan is expected to receive normal to below-normal rainfall during the 2025 monsoon season, particularly in districts like Astore, Skardu, Hunza, and Gilgit [floods-roadmap-2025 p.9]. Despite limited precipitation, the combination of above-normal temperatures and existing snowpacks and glaciers may accelerate glacial melt, posing a risk of Glacial Lake Outburst Floods (GLOFs) in vulnerable valleys [floods-roadmap-2025 p.9].",
+    "response":"Gilgit-Baltistan is expected to receive normal to below-normal rainfall during the 2025 monsoon season, particularly in districts like Astore, Skardu, Hunza, and Gilgit [floods-roadmap-2025 p.9]. This may trigger glacial lake outburst floods (GLOFs) in some areas, especially in vulnerable valleys such as Hunza, Shigar, and Ghizer [floods-roadmap-2025 p.9].",
     "reference":"Gilgit-Baltistan is expected to receive normal to below-normal rainfall, with precipitation likely in districts like Astore, Skardu, Hunza and Gilgit during late July and August. Combined with above-normal temperatures accelerating glacial melt, even isolated rainfall events may trigger glacial lake outburst floods (GLOFs).",
-    "faithfulness":null,
-    "llm_context_precision_with_reference":null,
-    "context_recall":null
+    "faithfulness":1.0,
+    "llm_context_precision_with_reference":1.0,
+    "context_recall":1.0
   },
   {
     "qid":"dis-en-009",
@@ -139,9 +139,9 @@
     ],
     "response":"According to the data, Balochistan recorded the highest percentage above normal rainfall, at 450% above normal, during the 2022 floods [floods-roadmap-2025 p.133].",
     "reference":"Balochistan recorded 450% above normal rainfall (320.7mm), the highest percentage; Sindh recorded 426% above normal (703.1mm).",
-    "faithfulness":null,
-    "llm_context_precision_with_reference":null,
-    "context_recall":null
+    "faithfulness":0.75,
+    "llm_context_precision_with_reference":1.0,
+    "context_recall":0.6666666667
   },
   {
     "qid":"dis-en-010",
@@ -155,9 +155,9 @@
     ],
     "response":"The national state of emergency was declared on August 26, 2022, during the 2022 floods, and 84 districts were initially designated as calamity-affected, primarily in Balochistan, Sindh, and Khyber Pakhtunkhwa [floods-roadmap-2025 p.132].",
     "reference":"A national state of emergency was declared on August 26, 2022, initially designating 84 districts, primarily in Balochistan and Sindh.",
-    "faithfulness":null,
-    "llm_context_precision_with_reference":null,
-    "context_recall":null
+    "faithfulness":0.6666666667,
+    "llm_context_precision_with_reference":1.0,
+    "context_recall":1.0
   },
   {
     "qid":"dis-en-011",
@@ -169,11 +169,11 @@
       "3. Ecosystem-based Disaster Risk Reduction (DRR) . Ecosystem-based DRR leverages natural systems to reduce vulnerability while delivering environmental co-benefits. Incorporation of Eco-DRR within the NDRP supports sustainable recovery by addressing root causes of disasters rather than only their impacts [NDM Act 2010: s.9; s.10; s.14; s.16; s.17; s.25]. Key approaches include:-\n- a. Watershed Restoration . Degraded upstream catchment areas are rehabilitated to reduce flood peaks, prevent soil erosion and improve water retention.\n- b. Reforestation and Afforestation . Tree planting along riverbanks and degraded hillsides stabilizes slopes, reduces landslide risk  and  enhances  carbon sequestration.\n- c. Wetland and Mangrove Conservation . Wetlands and coastal mangroves are protected to buffer storm surges, retain sediments and preserve biodiversity.\n- d. Urban Green Infrastructure . Parks, green roofs and permeable pavements are integrated into reconstruction to reduce urban flooding and heat stress.\n4. Integration with Infrastructure Planning and Land-Use . Disaster risk assessments are integrated into the planning and execution of infrastructure projects to ensure investments remain  resilient  and  sustainable.  Given  Pakistan's  exposure  to  hydro-meteorological  and seismic hazards, risk assessments are embedded in infrastructure planning [NDM Act 2010: s.9; s.10; s.14; s.16; s.17; s.25] through the following measures:-\n- a. Mandatory  Risk  Screening .  National  and  provincial  infrastructure  projects undergo hazard and vulnerability analysis prior to approval, including assessment of flood, seismic, landslide and extreme weather risks.\n- b. Resilience-Based  Design .  Engineering  solutions  reflect  identified  hazards, such as elevated and reinforced roads and bridges in flood-prone areas and contingency overflow measures in dams and drainage systems.",
       "- a. Enhance natural carbon sinks by afforestation,  reforestation  and  protecting  natural systems,  including rehabilitation of degraded  areas  that  contribute to  carbon sequestration;\n- b. Devise a strategy to avoid carbon dioxide emission from planned mangrove plantation drives  under  'Ten  Billion  Tree  Tsunami'  (TBTT)  and  Reducing  Emission  from Deforestation and Forest Degradation (REDD+);\n- c. Quantify  carbon  stocks  in  existing  forests  with  specific  focus  on  recovered  and protected forests to identify the monetary values of these ecosystems;\n- d. Strictly prohibit illegal forest cutting and conversion of forest land to non- forest uses;\n- e. Enact and enforce laws and regulations required for addressing illegal trade in timber and deforestation.\n- f. Use the vast mass of cultivable wasteland as a carbon sink and to build up organic soil matter;\n- g. Provide   incentives    and    alternative    fuel and livelihood options to forest dependent communities to prevent deforestation;\n- h. Promote farm forestry practices by planting multipurpose fast- growing species to meet the needs for timber, fuel wood and fodder for livestock;\n- i. Encourage and support forestry personnel in carbon forestry project development;\n- j. Establish  linkages  with  regulated  and  voluntary  carbon  markets  to  promote  and encourage forestry mitigation projects in Pakistan;\n- k. Secure financial assistance from the World Bank's Forest Carbon Partnership Facility (FCPF) and UN- REDD (Reducing Emissions from Deforestation and Forest Degradation) program as well as from other international sources to formulate a national program for avoiding deforestation and promoting forest restoration;\n- l. Prepare the framework for a national REDD strategy on priority basis and ensure its implementation in accordance with international conventions\/processes;\n- m. Develop  the  legal  and  institutional  frame  work  for  improved  forest  management, investment clearly specifying rights to REDD + credits;\n- n. Restore and establish the blue carbon sequestration capacity of mangroves, and tidal marshes."
     ],
-    "response":"Bluebelts are natural drainage systems that preserve and enhance natural drainage corridors such as streams, ponds, and wetlands to convey, store, and filter stormwater runoff from streets and sidewalks using open, natural landscapes rather than enclosed pipes [floods-roadmap-2025 p.28].",
+    "response":"Bluebelt systems are ecologically rich and cost-effective alternatives to traditional storm sewers. They preserve and enhance natural drainage corridors such as streams, ponds, and wetlands to convey, store, and filter stormwater runoff from streets and sidewalks using open, natural landscapes rather than enclosed pipes [floods-roadmap-2025 p.28].",
     "reference":"Bluebelts are an ecologically rich and cost-effective alternative to traditional storm sewers, first adopted in Staten Island. They preserve and enhance natural drainage corridors such as streams, ponds and wetlands, designed to convey, store and filter stormwater runoff.",
-    "faithfulness":null,
-    "llm_context_precision_with_reference":null,
-    "context_recall":null
+    "faithfulness":1.0,
+    "llm_context_precision_with_reference":1.0,
+    "context_recall":1.0
   },
   {
     "qid":"dis-en-012",
@@ -187,9 +187,9 @@
     ],
     "response":"The estimated economic losses of the 2010 floods were above USD 10 billion, accounting for both direct destruction and broader socio-economic impacts [floods-roadmap-2025 p.89].",
     "reference":"A joint Damage and Needs Assessment by the World Bank and Asian Development Bank placed total economic losses above USD 10 billion, accounting for direct destruction and broader socio-economic impacts.",
-    "faithfulness":null,
-    "llm_context_precision_with_reference":null,
-    "context_recall":null
+    "faithfulness":1.0,
+    "llm_context_precision_with_reference":0.95,
+    "context_recall":1.0
   },
   {
     "qid":"dis-en-013",
@@ -203,9 +203,9 @@
     ],
     "response":"Districts such as Peshawar, Mardan, Charsadda, Kohat, and Dera Ismail Khan in Khyber Pakhtunkhwa are identified as high-risk due to their location near rivers, dense drainage networks, and past flood incidents [floods-roadmap-2025 p.15].",
     "reference":"Peshawar, Mardan, Charsadda, Kohat and Dera Ismail Khan are identified as high-risk due to their location near rivers, dense drainage networks and past flood incidents.",
-    "faithfulness":null,
-    "llm_context_precision_with_reference":null,
-    "context_recall":null
+    "faithfulness":1.0,
+    "llm_context_precision_with_reference":0.9999999999,
+    "context_recall":1.0
   },
   {
     "qid":"dis-en-014",
@@ -217,11 +217,11 @@
       "The 1978 floods in Pakistan were extensive in both geographic spread and intensity, affecting over 5,173 villages across the country as shown in table 7. A staggering 1.63 million people were impacted as torrential monsoon rains and riverine floods inundated approximately 3.7 million acres of land, of which over 366,254 hectares\/ 905,000 acres were cropped, devastating livelihoods in agrarian communities. The floods caused 127 human  fatalities  and  the  loss  of  at  least  4,003  cattle  heads,  with  widespread destruction to homes, infrastructure, and agricultural assets.\nMultan Division was among the hardest hit, with nearly 1,000 villages affected. Over 493,000  people  were  impacted  and  more  than  99,152  hectares\/  245,000  acres  of farmland  were  damaged.  Layyah,  Kot  Adu,  and  Kabirwala  suffered  massive  crop losses  and  housing  destruction,  with  reports  of  52  deaths  and  significant  property losses including tube wells and poultry farms.\nIn Muzaffargarh, the flood affected 1,367 villages, inundating 0.43 million hectares\/ 1.06 million acres, damaging over 62,000 homes, and destroying more than 72,000 structures. Similarly, Dera Ghazi Khan experienced flooding across 315 villages, with more  than  253,342  hectares\/626,000  acres  submerged  and  extensive  agricultural losses, including 53302 maunds of wheat and 119149 maunds of bhoosa (fodder). At least 10 people died and 3,444 cattle were lost.\nThe Jhang region recorded the highest number of affected villages (638), where over 278,838  hectares\/  689,000  acres  were  impacted.  A  total  of  25,488  houses  were demolished,  with  particularly  severe  damage  reported  in  Shorkot.  Faisalabad  also faced significant destruction, with over 31786 houses damaged and 265 tube wells along with a poultry farm affected.",
       "Table 3: Historical Flood Events Experienced in Pakistan\nS.No, 1 = Year. S.No, 2 = Direct Losses (US$ Million) @1US$ = PKR 86. S.No, 3 = Lives Lost. S.No, 4 = Affected Populatio n. S.No, 5 = Flooded Area (Sq. km). 1., 1 = 1950. 1., 2 = 488. 1., 3 = 2,190. 1., 4 = 10,000. 1., 5 = 17,920. 2., 1 = 1955. 2., 2 = 378. 2., 3 = 679. 2., 4 = 6,945. 2., 5 = 20,480. 3., 1 = 1956. 3., 2 = 318. 3., 3 = 160. 3., 4 = 11,609. 3., 5 = 74,406. 4., 1 = 1957. 4., 2 = 301. 4., 3 = 83. 4., 4 = 4,498. 4., 5 = 16,003. 5., 1 = 1959. 5., 2 = 234. 5., 3 = 88. 5., 4 = 3,902. 5., 5 = 10,424. 6., 1 = 1973. 6., 2 = 5,134. 6., 3 = 474. 6., 4 = 9,719. 6., 5 = 41,472. 7., 1 = 1975. 7., 2 = 684. 7., 3 = 126. 7., 4 = 8,628. 7., 5 = 34,931. 8., 1 = 1976. 8., 2 = 3,485. 8., 3 = 425. 8., 4 = 18,390. 8., 5 = 81,920. 9., 1 = 1977. 9., 2 = 338. 9., 3 = 848. 9., 4 = 2,185. 9., 5 = 4,657. 10., 1 = 1978. 10., 2 = 2,227. 10., 3 = 393. 10., 4 = 9,199. 10., 5 = 30,597. 11., 1 = 1981. 11., 2 = 299. 11., 3 = 82. 11., 4 = 2,071. 11., 5 = 4,191. 12., 1 = 1983. 12., 2 = 135. 12., 3 = 39. 12., 4 = 643. 12., 5 = 1,882. 13., 1 = 1984. 13., 2"
     ],
-    "response":"The 1975 floods in Pakistan affected 3,263 villages across 16 major districts, impacting over 1.8 million people. The floodwaters inundated approximately 1 million hectares\/ 2.47 million acres of land, of which nearly 274,791 hectares \/ 679,000 acres were cropped land, resulting in severe agricultural disruption [floods-roadmap-2025 p.40, 41].",
+    "response":"The 1975 floods in Pakistan affected 3,263 villages across 16 major districts, impacting over 1.8 million people. The floodwaters inundated approximately 1 million hectares\/ 2.47 million acres of land, with nearly 274,791 hectares \/ 679,000 acres being cropped land, resulting in severe agricultural disruption [floods-roadmap-2025 p.40, 41].",
     "reference":"The 1975 floods affected 3,263 villages across 16 major districts, impacting over 1.8 million people and inundating approximately 1 million hectares (2.47 million acres).",
-    "faithfulness":null,
-    "llm_context_precision_with_reference":null,
-    "context_recall":null
+    "faithfulness":1.0,
+    "llm_context_precision_with_reference":0.9999999999,
+    "context_recall":1.0
   },
   {
     "qid":"dis-en-015",
@@ -233,11 +233,11 @@
       "Pakistan's disaster landscape. This includes incorporating historical disaster trends, emerging climate projections, lessons learned from past emergencies, vulnerability assessments, and an up-to-date inventory of available resources and response capacities at all administrative levels.  Equally  important  is  the  clear  articulation  of  institutional  roles  and  responsibilities, ensuring that all stakeholders from Federal ministries to provincial departments, humanitarian partners, and community-based organizations to operate in a coordinated and synchronized manner.\n6. NDMA under clause 9(a) and 9(b) of NDMA Act 2010 (enclosed at Annex-A ) deals with the  complete  spectrum  of  disaster  management  activities  in  the  paradigm  of PR 3 (Preparedness,  Response,  Recovery  and  Rehabilitation).  Consequent  to  passage  of  18 th Constitutional Amendment, Disaster Management has been devolved to the provinces and other federating units. Nonetheless, NDMA issues policy guidelines, renders directions and early warnings to various federal and provincial departments and DM agencies to initiate mitigation measures for potential disaster risks and contingency plans for any disaster situation under likely  hazards.  Accordingly,  NDMA  has issued  the National Disaster Management Plan (NDMP) 2025 and National Disaster Response Plan (NDRP) 2024\/25 . In the same context, the  issuance  of National  Monsoon Contingency Plan is  an  annual  practice,  undertaken before the start of Monsoon Season.\n7. ' National Monsoon Contingency Plan 2025 ' has been prepared in coordination with all  disaster management  stakeholders  from  Federal  to  Provincial  levels.  It  is  based  on analysis of seasonal forecast by NDMA Tech Team and Pakistan Meteorological Department\n(PMD) and likely impact of climate change. The plan lays down guidelines for all disaster management tiers and stakeholders  for  proactive  preparations,  measures  for mitigation against likely hazards, preparedness for most probable  to  worst-case  scenarios  and  mounting  an effective  and  timely  response  against  likely  hazards  \/ emergencies  during  Monsoon  Season  2025.  In  this regard, the NDMA  actively engaged all relevant stakeholders to provide updates on ongoing preparatory and  mitigation  measures  for  the  upcoming  Monsoon season.",
       "- also mandated to train staff, support rehabilitation, enforce safer reconstruction, and engage communities in awareness and early warning activities, forming the grassroots foundation of Pakistan's disaster management system.\n- e. Other Stakeholders .  Military\/ paramilitary (search and rescue, logistics), NGOs (relief, health), private sector (supplies, infrastructure), media (risk communication), Academia, DRR societies.\n3. Functioning of  NDMA .  NDMA  of  Pakistan  operates  through  specialized  wings  to manage disasters effectively at both local and global levels. NDMA's wings are responsible for  formulating  national  disaster  policies  and  plans,  coordinating  with  federal  institutions, PDMAs and DDMAs, issuing early warnings, mobilizing resources, overseeing emergency response,  and  supporting  rehabilitation  and  reconstruction  efforts  across  Pakistan.  These wings  ensure  capacity  building,  training,  risk  assessment,  and  integration  of  DRR  into development  planning.  Globally, NDMA  represents  Pakistan  in  international disastermanagement forums, coordinates humanitarian assistance with United Nations, international NGOs, and donor agencies, manages foreign relief and aid during major disasters, and aligns national disaster practices with international frameworks such as the Sendai Framework for DRR, thereby strengthening Pakistan's disaster preparedness and response through global cooperation and knowledge sharing:-"
     ],
-    "response":"Pakistan's disaster management system is a three-tiered structure, consisting of federal, provincial, and district levels [ndmp-2026 p.18]. The National Disaster Management Commission (NDMC) is headed by the Honourable Prime Minister of Pakistan, who acts as Chairman of the commission [ndmp-2026 p.18].",
+    "response":"Pakistan's disaster management system is a three-tiered structure, consisting of federal, provincial, and district levels [ndmp-2026 p.18]. The National Disaster Management Commission (NDMC) oversees the overall disaster management of the country and is headed by the Honourable Prime Minister of Pakistan [ndmp-2026 p.18].",
     "reference":"According to the National Disaster Management Act 2010, Pakistan has a three-tiered disaster management system: federal, provincial and district. The National Disaster Management Commission (NDMC) oversees overall disaster management and is headed by the Prime Minister of Pakistan as Chairman.",
-    "faithfulness":null,
-    "llm_context_precision_with_reference":null,
-    "context_recall":null
+    "faithfulness":1.0,
+    "llm_context_precision_with_reference":1.0,
+    "context_recall":1.0
   },
   {
     "qid":"dis-en-016",
@@ -251,9 +251,9 @@
     ],
     "response":"NDMA's major powers and functions under the NDM Act 2010 include: \n- Strategic oversight, national-level coordination, resource mobilization, capacity building, standards, and Standard Operating Procedures (SOPs) [ndmp-2026 p.19]. \nSpecifically, NDMA is responsible for implementing, coordinating, and monitoring disaster management, preparing the National Plan, and providing technical assistance to Provincial Governments [ndmp-2026 p.19].",
     "reference":"NDMA is responsible for strategic oversight, national-level coordination, resource mobilization, capacity building and standards.",
-    "faithfulness":null,
-    "llm_context_precision_with_reference":null,
-    "context_recall":null
+    "faithfulness":1.0,
+    "llm_context_precision_with_reference":1.0,
+    "context_recall":0.0769230769
   },
   {
     "qid":"dis-en-017",
@@ -267,9 +267,9 @@
     ],
     "response":"NDMP 2026 identifies people experiencing homelessness, residents of katchi abadis and informal shelters, daily-wage labourers, street vendors, and unemployed or under-employed individuals as economically marginalized populations that face heightened exposure risks, displacement, and exclusion from relief and compensation [ndmp-2026 p.51].",
     "reference":"People experiencing homelessness, residents of katchi abadis and informal shelters, daily-wage labourers, street vendors, and unemployed or under-employed people face heightened exposure risks, displacement and exclusion from relief and compensation.",
-    "faithfulness":null,
-    "llm_context_precision_with_reference":null,
-    "context_recall":null
+    "faithfulness":0.9090909091,
+    "llm_context_precision_with_reference":0.8333333333,
+    "context_recall":1.0
   },
   {
     "qid":"dis-en-018",
@@ -283,9 +283,9 @@
     ],
     "response":"Hazard maps are integrated into municipal planning in cities such as Karachi, Lahore, and Islamabad to ensure safer zoning, evacuation routes, and emergency access [ndmp-2026 p.81].",
     "reference":"Hazard maps are integrated into municipal planning in cities such as Karachi, Lahore and Islamabad to ensure safer zoning, evacuation routes and emergency access.",
-    "faithfulness":null,
-    "llm_context_precision_with_reference":null,
-    "context_recall":null
+    "faithfulness":1.0,
+    "llm_context_precision_with_reference":0.75,
+    "context_recall":0.5
   },
   {
     "qid":"pol-en-019",
@@ -297,11 +297,11 @@
       "Ensuring policy coherence across sectors and aligning with international commitments is vital  for  integrated  DRR  efforts.  This  sub-section  outlines  the  need  for  regular  policy reviews, the creation of inter-agency coordination mechanisms, and the development of new  policies  where  gaps  exist.  Aligning  national  strategies  with  global  frameworks enhances  Pakistan's  ability  to  access  international  support  and  ensures  effective stakeholder collaboration.\n3.2.1, Action = Map national DRR policies against global frameworks such as the SFDRR and Paris Agreement.. 3.2.1, Timeline = Short- term. 3.2.1, Expected Outcome = Alignment of national policies with international frameworks.. 3.2.2, Action = Promote dialogue among policymakers, practitioners, and communities to ensure alignment.. 3.2.2, Timeline = Short- term. 3.2.2, Expected Outcome = Increased collaboration and shared understanding among stakeholders.. 3.2.3, Action = Develop mechanisms to align DRR objectives with sectoral policies, including climate change adaptation plans.. 3.2.3, Timeline = Medium- term. 3.2.3, Expected Outcome = Integrated approach to DRR and climate adaptation challenges.. 3.2.4, Action = Establish inter-agency coordination mechanisms to unify policy objectives and responsibilities.. 3.2.4, Timeline = Medium- term. 3.2.4, Expected Outcome = Improved collaboration among agencies for unified DRR objectives.",
       "Pakistan has long been vulnerable to a range of natural and human-induced disasters, including earthquakes, floods, droughts, and climate-related emerging hazards such as glacial  lake  outburst  floods  (GLOFs),  heatwaves,  forest  fires  and  shifting  monsoon patterns.  These  disasters  disrupt  lives,  undermine  economic  stability,  and  set  back development progress. The National Disaster Risk Reduction Strategy (NDRRS) 20252030 provides a comprehensive framework to mitigate these risks, enhance preparedness, and foster resilience through proactive planning, inclusive governance, and technological innovation.\nDrawing lessons from past disasters and aligning with global frameworks such as the Sendai Framework for Disaster Risk Reduction (SFDRR), the Paris Agreement, and the Sustainable Development Goals (SDGs), this strategy underscores Pakistan's commitment to reducing vulnerabilities and promoting sustainable development.\nAt its core, the strategy envisions a disaster-resilient Pakistan where communities and institutions thrive in safety and sustainability. To achieve this, the NDRRS 2025-2030 is built around seven strategic goals:\n1. Enhancing Risk Understanding and Reduction -  Strengthening multi-hazard risk assessments, improving data integration, and fostering public awareness to enable informed decision-making.\n2. Strengthening  Disaster  Governance -  Defining  roles,  enhancing  institutional capacities,  and promoting decentralized governance for more effective disaster risk management.\n3. Investing in Resilience - Prioritizing infrastructure retrofitting, ecosystem-based disaster risk reduction, and risk-sensitive urban planning to minimize vulnerabilities.\n4. Modernizing  Preparedness  and  Response -  Leveraging  advanced  early warning systems, anticipatory action mechanisms, and community-based disaster preparedness initiatives.\n5. Promoting Inclusive and Sustainable DRR - Embedding gender equity, climate adaptation, and community participation into disaster risk reduction efforts.\n6. Leveraging Technology and Innovation - Utilizing digital solutions such as AI, blockchain,  and  Internet  of  Things  (IoT)  for  real-time  monitoring,  secure  data management, and efficient resource allocation."
     ],
-    "response":"The NDRRS 2025-2030 requires regular policy reviews, creation of inter-agency coordination mechanisms, and development of new policies where gaps exist to ensure policy coherence [ndrrs-2025-2030 p.[17]]. It also involves mapping national DRR policies against global frameworks, promoting dialogue among stakeholders, and developing mechanisms to align DRR objectives with sectoral policies [ndrrs-2025-2030 p.[17]].",
+    "response":"The NDRRS 2025-2030 requires regular policy reviews, creation of inter-agency coordination mechanisms, and development of new policies where gaps exist to ensure policy coherence across sectors and alignment with international commitments [ndrrs-2025-2030 p.[17]]. This includes mapping national DRR policies against global frameworks, promoting dialogue among stakeholders, and establishing inter-agency coordination mechanisms [ndrrs-2025-2030 p.[17]].",
     "reference":"It outlines the need for regular policy reviews, the creation of inter-agency coordination mechanisms, and the development of new policies where gaps exist, aligning national strategies with global frameworks.",
-    "faithfulness":null,
-    "llm_context_precision_with_reference":null,
-    "context_recall":null
+    "faithfulness":1.0,
+    "llm_context_precision_with_reference":0.6791666666,
+    "context_recall":1.0
   },
   {
     "qid":"pol-en-020",
@@ -315,9 +315,9 @@
     ],
     "response":"The annual expected damage from riverine floods in Pakistan is projected to surge by 47 percent (RCP 4.5) and 49 percent (RCP 8.5) by 2050 [nap-2023 p.31].",
     "reference":"The annual expected damage from riverine floods by 2050 is projected to surge by 47 percent under RCP 4.5 and 49 percent under RCP 8.5.",
-    "faithfulness":null,
-    "llm_context_precision_with_reference":null,
-    "context_recall":null
+    "faithfulness":0.8333333333,
+    "llm_context_precision_with_reference":1.0,
+    "context_recall":1.0
   },
   {
     "qid":"pol-en-021",
@@ -329,11 +329,11 @@
       "The  accelerated  impacts  of  climate  change  have  redened  Pakistan's  experience  with  vulnerability,  disaster management, resilience, and development. Pakistan is among the top-ten countries in the world most vulnerable to 5 the  negative  effects  of  climate  change.   These  effects  are  clearly  visible  in  the  country:  for  example,  rising temperatures over the past century-increasing at a higher rate than average global temperatures-are leading to heat stress and increased water scarcity. Pakistan is close to reaching the water scarcity threshold of 1,000 cubic meters per capita of annual water availability. Sea levels in the Indus Delta are rising, accelerating the salinization of inland  waters.  Perhaps  most  dramatically,  Pakistan  is  seeing  both  more  frequent  and  more  intense  extreme weather events and natural disasters. The most recent oods, in 2022, inundated one-third of districts in the country and affected 33 million people, 8 million of whom were displaced.\nAll these effects-increased temperature, greater heat and water stress, more frequent and more intense oods and drought, uneven erratic precipitation, and rising sea levels-have massive spill-over and knock-on effects on development and economic growth. Agriculture is among the sectors worst hit by climate change effects: reduced productivity is leading to the loss of agricultural livelihoods and growing food insecurity. The human, physical, and economic toll of repeated natural disasters is huge: each new disaster further erodes Gross Domestic Product (GDP), personal resilience, and development gains.\nEvery part of Pakistan is experiencing the adverse effects of climate change, but the extent and nature of those effects vary from one region to another-from glacial lake outburst oods (GLOFs) in the north, to drought in parts of Sindh and Balochistan, to cyclones in coastal areas. Nonetheless, the scale of damage and loss from climate change is so vast that few Pakistanis have not felt these directly.",
       "Pakistan has in some ways become an epicentre for climate change, ranking among the top-ten countries most vulnerable to its devastating effects. As temperatures, already high, surge at a rate surpassing global averages, heat stress and extreme weather impacts threaten the very fabric of livelihoods and human potential. The nation teeters on the brink of a water scarcity threshold, while rising sea levels in the Indus Delta relentlessly accelerate the salinization of precious inland waters. The 2022 oods submerged one-third of the country, uprooting 8 million lives. Adding to the peril, the projected recession of the Hindu Kush-Karakoram-Himalayan glaciers heightens the haunting threat of glacial lake outburst oods. If current trends continue, large swathes of the country could become uninhabitable, and the most vulnerable segments, such as the marginalized and the landless population, would be on the frontlines of the devastation. With the clock ticking, and global inaction on Paris commitments to reduce emissions stalemated, and no pledged transformational funding available, Pakistan stands at a dening moment, where it must stocktake and build on stressed resources to catalyse a resilient and equitable future.\nDespite being an almost negligible contributor to global warming, the costs of climate change to Pakistan are substantial and continuously increasing as the country faces severe economic challenges. The accelerated impacts of climate change have added a new layer of pressures on the economy, including the exogenous shock of severe climate disasters, which in 2022 exerted a drag of 8 percent loss on the Gross Domestic Product (GDP). Rising ination,  high  indebtedness,  low  growth,  currency  depreciation,  and  depleted  foreign  currency  reserves  have further added to the scale and multitude of challenges.\nGiven the growing and cross-cutting challenges posed by climate change, Pakistan needs to urgently prioritize adaptation and building resilience. By proactively addressing climate risks and embedding adaptation strategies in its  development  and  planning  frameworks,  Pakistan  could  reduce  its  economic  losses,  reduce  some  level  of climate-induced risks, enhance business continuity, and pursue sustainable economic development."
     ],
-    "response":"The fraction of the population exposed to heatwaves each year is expected to increase by 32 percent (RCP 4.5) and 36 percent (RCP 8.5) by 2050 [nap-2023 p.31]. Additionally, labour productivity is projected to decline by 7 percent (RCP 4.5) and 10 percent (RCP 8.5) due to escalating heat stress [nap-2023 p.31].",
+    "response":"The fraction of the population exposed to heatwaves each year is expected to increase by 32 percent (RCP 4.5) and 36 percent (RCP 8.5) by 2050 [nap-2023 p.31]. Labour productivity is projected to decline across the board because of escalating heat stress, by 7 percent (RCP 4.5) and 10 percent (RCP 8.5) by 2050 [nap-2023 p.31].",
     "reference":"The fraction of the population exposed to heatwaves each year is expected to increase by 32 percent (RCP 4.5) and 36 percent (RCP 8.5) by 2050, and labour productivity is projected to decline by 7 percent (RCP 4.5) and 10 percent (RCP 8.5) due to escalating heat stress.",
-    "faithfulness":null,
-    "llm_context_precision_with_reference":null,
-    "context_recall":null
+    "faithfulness":1.0,
+    "llm_context_precision_with_reference":1.0,
+    "context_recall":1.0
   },
   {
     "qid":"pol-en-022",
@@ -347,9 +347,9 @@
     ],
     "response":"Groundwater supplies 90 percent of domestic water in rural Pakistan and 70 percent of domestic water nationally [nap-2023 p.52].",
     "reference":"Groundwater supplies 90 percent of domestic water in rural Pakistan and 70 percent of domestic water nationally, and serves as a buffer during drought.",
-    "faithfulness":null,
-    "llm_context_precision_with_reference":null,
-    "context_recall":null
+    "faithfulness":1.0,
+    "llm_context_precision_with_reference":0.5,
+    "context_recall":1.0
   },
   {
     "qid":"pol-en-023",
@@ -361,11 +361,11 @@
       "1. Pakistan  is  geographically  and  topographically  diverse,  with  snowcapped  mountain ranges in the North, rolling hills and river basins in the Center, arid deserts in the South, and a long coastal belt along the Arabian Sea. Pakistan's diverse terrain renders it highly susceptible to a variety of natural hazards, including floods, earthquakes, landslides, cyclones, droughts, and  glacial  lake  outburst  floods  (GLOFs).  The  interplay  among  climate  variability,  socioeconomic pressures, and inadequate infrastructure has increased the frequency, severity, and impact of disasters.\n2. According to the Global Climate Risk Index (CRI) 2025 published by Germanwatch, Pakistan has been among most climate-vulnerable countries in the world, underscoring its acute  susceptibility  to  the  adverse  impacts  of  climate  change.  This  ranking  highlights  a paradox: while Pakistan contributes less than 1% to global greenhouse gas emissions, it faces disproportionate  consequences  in  the  form  of  frequent  and  intensifying  extreme  weather events.\n3. These  events  include  erratic  Monsoon  patterns,  prolonged  heatwaves,  accelerated glacial melt in the Northern highlands, increasing cyclonic activity along the Arabian Sea, and prolonged periods of drought in the arid Southern and Western regions. Each of these hazards has shown a rising trend in both frequency and severity over the past two decades.\n4. The country has faced a wide range of hazards throughout its history. Floods riverine, flash, and urban are the most recurrent and damaging, affecting millions of people annually. Earthquakes  in  Northern  regions,  recurring  droughts  in  Southern  and  Western  areas,  and cyclones along the coastal belt have all left significant human, social, and economic impacts. The disasters of 2005 (earthquake), 2010 (super floods), and 2022 (Monsoon floods) have shaped the institutional disaster management landscape in Pakistan.\n5. The Monsoon Contingency Plan 2025 must be grounded in a holistic understanding of\nPicture 1 Shows the Climate Risk Index 2025",
       "Climate change significantly intensifies disaster risks, exacerbating the frequency and intensity  of  hazards.  In  the  recent  past,  Pakistan  has  witnessed  rising  temperatures, changing precipitation patterns, and increasing extreme weather events, which require a proactive and integrated approach to risk management. Though the country's vulnerability to  the  impacts  of  climate  change  is  well  known,  however  conducting  comprehensive climate vulnerability assessments will be critical in identifying the most vulnerable regions and sectors. By integrating climate adaptation measures into DRR strategies, Pakistan can build resilience against climate-driven hazards. Collaborations with meteorological agencies and climate experts enhance predictive modeling and preparedness for future risks.  Public  awareness  initiatives  are  essential  to  highlight  the  links  between  climate change and disaster risks, fostering a culture of climate-resilient planning and action."
     ],
-    "response":"After the 2005 earthquake, Pakistan underwent a profound transformation in Disaster Risk Management (DRM) that culminated in the establishment of a comprehensive institutional framework [nap-2023 p.68]. The National Disaster Management Act was passed, and the disaster management function was devolved to provincial and local governments under the 18th Constitutional Amendment [nap-2023 p.68]. This transformation led to the development of comprehensive DRM policies, including the National Disaster Management Plan and National Flood Protection Plan IV [nap-2023 p.68].",
+    "response":"After the 2005 earthquake, Pakistan underwent a profound transformation in Disaster Risk Management (DRM) that culminated in the establishment of a comprehensive institutional framework [nap-2023 p.68]. The National Disaster Management Act was passed, and the disaster management function was devolved to provincial and local governments under the 18th Constitutional Amendment [nap-2023 p.68]. This transformation also led to the development of comprehensive DRM policies, including the National Disaster Management Plan and National Flood Protection Plan IV [nap-2023 p.68].",
     "reference":"After the 2005 earthquake, Pakistan underwent a profound DRM transformation: the National Disaster Management Act was passed, and under the 18th Constitutional Amendment the disaster management function was devolved to provincial and local governments.",
-    "faithfulness":null,
-    "llm_context_precision_with_reference":null,
-    "context_recall":null
+    "faithfulness":1.0,
+    "llm_context_precision_with_reference":1.0,
+    "context_recall":1.0
   },
   {
     "qid":"pol-en-024",
@@ -379,9 +379,9 @@
     ],
     "response":"In 2017-18, Pakistan's total greenhouse gas (GHG) emissions were 490 million tons of CO2 equivalents. The Agriculture, Forestry & Land Use sector was the largest source of GHG emissions, accounting for nearly 46% of these emissions, followed by the energy sector (45%), industrial processes (5%), and emissions and waste (4%) [nccp-2021 p.37].",
     "reference":"Pakistan's total GHG emissions were 490 million tons of CO2 equivalent in 2017-18. The Agriculture, Forestry & Land Use sector is the largest source at nearly 46%, followed by energy (45%) and industrial processes (5%).",
-    "faithfulness":null,
-    "llm_context_precision_with_reference":null,
-    "context_recall":null
+    "faithfulness":1.0,
+    "llm_context_precision_with_reference":0.9166666666,
+    "context_recall":0.1818181818
   },
   {
     "qid":"pol-en-025",
@@ -395,8 +395,8 @@
     ],
     "response":"The National Climate Change Policy prioritizes the elderly, children, disabled, and women in evacuation strategies [nccp-2021 p.33].",
     "reference":"The elderly, children, disabled and women get particular priority in evacuation strategies. The policy also calls for mechanisms to monitor glacial lake development and evacuation strategies for GLOF events.",
-    "faithfulness":null,
-    "llm_context_precision_with_reference":null,
-    "context_recall":null
+    "faithfulness":1.0,
+    "llm_context_precision_with_reference":0.9166666666,
+    "context_recall":1.0
   }
 ]

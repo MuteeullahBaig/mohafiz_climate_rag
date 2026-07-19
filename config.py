@@ -11,7 +11,14 @@ MANIFEST = ROOT / "ingestion" / "manifest.json"
 
 # Qdrant embedded local mode — no server/Docker needed for dev
 QDRANT_PATH = str(DATA / "qdrant_local")
-COLLECTION = "mohafiz_v1"
+COLLECTION = "mohafiz_v1"          # W1: dense-only
+COLLECTION_V2 = "mohafiz_v2"       # W2: named vectors (dense + sparse) for hybrid
+
+# W2 embedding artifacts (reusable across re-indexing)
+DENSE_NPY = DATA / "embeddings_dense.npy"
+SPARSE_JSONL = DATA / "embeddings_sparse.jsonl"
+
+RERANKER_MODEL = "BAAI/bge-reranker-v2-m3"
 
 EMBED_MODEL = "BAAI/bge-m3"
 EMBED_DIM = 1024
