@@ -13,3 +13,5 @@ fastapi
 uvicorn[standard]
 slowapi
 sse-starlette
+# ZeroGPU (HF free tier) requires the spaces package + a @spaces.GPU function
+spaces
