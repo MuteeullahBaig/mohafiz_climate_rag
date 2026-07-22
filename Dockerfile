@@ -13,8 +13,8 @@ ENV HOME=/home/user \
 
 WORKDIR /app
 
-COPY --chown=user requirements-deploy.txt .
-RUN pip install --no-cache-dir --user -r requirements-deploy.txt
+COPY --chown=user requirements.txt .
+RUN pip install --no-cache-dir --user -r requirements.txt
 
 # Bake the embedding + reranker weights into the image so cold starts don't re-download
 RUN python -c "from huggingface_hub import snapshot_download; \

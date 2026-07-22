@@ -1,0 +1,10 @@
+# Dev / ingestion / evaluation extras. Install on top of the runtime deps:
+#   pip install -r requirements.txt -r requirements-dev.txt
+docling            # PDF parsing (ingestion only)
+ragas              # RAG evaluation
+wandb              # ablation tracking
+# ragas 0.4.x imports legacy langchain_community paths — pin the 0.3.x line
+langchain<1
+langchain-community<0.4
+langchain-groq<1
+langchain-openai<1

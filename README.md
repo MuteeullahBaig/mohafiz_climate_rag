@@ -1,3 +1,16 @@
+---
+title: Mohafiz Climate RAG
+emoji: 🛡️
+colorFrom: blue
+colorTo: green
+sdk: gradio
+sdk_version: 6.20.0
+app_file: app.py
+pinned: false
+license: mit
+short_description: Bilingual agentic climate & disaster RAG for Pakistan
+---
+
 # Mohafiz (محافظ)
 
 Bilingual (English + Urdu) **agentic RAG** assistant for Pakistan's climate reality — disaster
@@ -18,9 +31,11 @@ earthquakes, and disaster alerts.
 
 ```powershell
 # after ingest (see Setup) and with GROQ_API_KEY in .env:
-.venv\Scripts\python -m uvicorn api.main:app --port 7860   # chat UI at http://localhost:7860
+.venv\Scripts\python app.py                                # Gradio chat UI (HF Spaces entrypoint)
+# or the FastAPI variant (JSON + SSE API, self-host / Docker):
+.venv\Scripts\python -m uvicorn api.main:app --port 7860
 ```
-Endpoints: `GET /api/health`, `GET /api/alerts`, `POST /api/ask`, `GET /api/ask/stream` (SSE).
+FastAPI endpoints: `GET /api/health`, `GET /api/alerts`, `POST /api/ask`, `GET /api/ask/stream` (SSE).
 Free-tier survival is built in: per-IP rate limiting (slowapi), a normalized response cache,
 and a daily LLM budget that degrades to retrieval-only instead of erroring.
 

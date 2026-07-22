@@ -1,24 +1,15 @@
-# Mohafiz — full dev/ingest/eval deps (CPU-only torch is fine at this corpus scale).
-# For the deployed serving container, see the lean requirements-deploy.txt.
-docling
+# Runtime deps — what the HF Gradio Space (and any fresh clone) needs to RUN the app.
+# Ingestion/eval extras (docling, ragas, wandb) live in requirements-dev.txt.
 FlagEmbedding
 qdrant-client
-ragas
-# ragas 0.4.3 imports legacy langchain_community.chat_models paths — needs the 0.3.x line.
-# If W3's langgraph demands langchain-core>=1, split evals into their own venv/extra.
-langchain<1
-langchain-core<1
-langchain-community<0.4
-langchain-groq<1
-langchain-openai<1
-groq
-python-dotenv
-httpx
-wandb
-# W3 agent + W5 serving
 langgraph
+langchain-core<1
+groq
+gradio==6.20.0
+httpx
+python-dotenv
+# FastAPI JSON+SSE variant (api/main.py) — harmless on the Gradio Space, needed for self-host
 fastapi
 uvicorn[standard]
-gradio
 slowapi
 sse-starlette

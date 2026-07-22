@@ -24,7 +24,7 @@ def main():
     for c, s in zip(chunks, sparse):
         assert c["chunk_id"] == s["chunk_id"], f"chunk order mismatch at {c['chunk_id']}"
 
-    client = config.qdrant_client()
+    client = config.qdrant_client(timeout=120)  # bulk upload to cloud needs headroom
     if client.collection_exists(config.COLLECTION_V2):
         client.delete_collection(config.COLLECTION_V2)
     client.create_collection(
@@ -33,12 +33,15 @@ def main():
         sparse_vectors_config={"sparse": models.SparseVectorParams()},
     )
 
-    BATCH = 128
+    # embed_text (heading-contextualized copy) is only needed at embedding time — strip it
+    # from the stored payload to roughly halve the upload/storage size.
+    BATCH = 64  # smaller batches survive slower network round-trips to the cloud
     for start in range(0, len(chunks), BATCH):
         end = min(start + BATCH, len(chunks))
         points = []
         for i in range(start, end):
             w = sparse[i]["weights"]
+            payload = {k: v for k, v in chunks[i].items() if k != "embed_text"}
             points.append(
                 models.PointStruct(
                     id=i,
@@ -48,10 +51,11 @@ def main():
                             indices=[int(k) for k in w.keys()], values=list(w.values())
                         ),
                     },
-                    payload=chunks[i],
+                    payload=payload,
                 )
             )
         client.upsert(collection_name=config.COLLECTION_V2, points=points)
+        print(f"  upserted {end}/{len(chunks)}")
     print(f"indexed {len(chunks)} hybrid points into '{config.COLLECTION_V2}'")
 
 

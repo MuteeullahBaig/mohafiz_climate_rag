@@ -23,11 +23,12 @@ COLLECTION = "mohafiz_v1"          # W1: dense-only
 COLLECTION_V2 = "mohafiz_v2"       # W2: named vectors (dense + sparse) for hybrid
 
 
-def qdrant_client():
-    """One client factory used everywhere — local path unless QDRANT_URL is set."""
+def qdrant_client(timeout=30):
+    """One client factory used everywhere — local path unless QDRANT_URL is set.
+    Bulk indexing to the cloud passes a longer timeout than query-time serving."""
     from qdrant_client import QdrantClient
     if QDRANT_URL:
-        return QdrantClient(url=QDRANT_URL, api_key=QDRANT_API_KEY or None, timeout=30)
+        return QdrantClient(url=QDRANT_URL, api_key=QDRANT_API_KEY or None, timeout=timeout)
     return QdrantClient(path=QDRANT_PATH)
 
 # W2 embedding artifacts (reusable across re-indexing)
