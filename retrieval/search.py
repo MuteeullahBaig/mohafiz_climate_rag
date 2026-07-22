@@ -5,6 +5,7 @@ W2: Retriever — modes dense / sparse / hybrid (server-side RRF fusion via the
     Query API) on the v2 named-vector collection, with optional BGE cross-encoder
     reranking of the prefetch pool.
 """
+import os
 import sys
 from pathlib import Path
 
@@ -15,14 +16,19 @@ import torch
 from FlagEmbedding import BGEM3FlagModel
 from qdrant_client import QdrantClient, models
 
-_USE_GPU = torch.cuda.is_available()
+# On HF Spaces (ZeroGPU especially) the main process must not initialize CUDA — the GPU is
+# only available inside @spaces.GPU functions, and FlagEmbedding auto-moving BGE-M3 to CUDA
+# here raises. Force CPU on any Space (SPACE_ID is always set there); local dev keeps its GPU.
+_ON_SPACE = bool(os.environ.get("SPACE_ID"))
+_USE_GPU = torch.cuda.is_available() and not _ON_SPACE
+_DEVICE = None if _USE_GPU else "cpu"
 
 
 class DenseSearcher:
     """W1 baseline searcher (v1 collection, dense only)."""
 
     def __init__(self):
-        self.model = BGEM3FlagModel(config.EMBED_MODEL, use_fp16=_USE_GPU)
+        self.model = BGEM3FlagModel(config.EMBED_MODEL, use_fp16=_USE_GPU, devices=_DEVICE)
         self.client = config.qdrant_client()
 
     def search(self, query: str, k: int = 5) -> list[dict]:
@@ -47,7 +53,7 @@ class Retriever:
         assert mode in ("dense", "sparse", "hybrid"), mode
         self.mode = mode
         self.rerank = rerank
-        self.model = BGEM3FlagModel(config.EMBED_MODEL, use_fp16=_USE_GPU)
+        self.model = BGEM3FlagModel(config.EMBED_MODEL, use_fp16=_USE_GPU, devices=_DEVICE)
         self.client = config.qdrant_client()
         self._reranker = None  # lazy — 2.3GB model
 
