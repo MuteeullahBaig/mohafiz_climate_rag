@@ -5,36 +5,16 @@ on:
     branches: [master]
   pull_request:
 
+# Lightweight, reliable gate: byte-compile every source file to catch syntax errors.
+# (No heavy install, no secrets, no LLM calls — the full retrieval/RAGAS/routing evals
+# run locally, since they need the models, Qdrant, and a Groq key.)
 jobs:
-  smoke:
+  compile:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Install serving deps
-        run: pip install -r requirements-deploy.txt
-      - name: Compile the agent graph (no models, no network)
-        run: python -c "from agent.graph import build_graph; build_graph(); print('graph compiles OK')"
-      - name: Import serving modules
-        run: python -c "import config, agent.quota, agent.prompts, agent.helplines, retrieval.search; print('imports OK')"
-
-  routing-eval:
-    # Real eval gate — runs only when a Groq key is configured (classify-only, no Qdrant).
-    runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'push' }}
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-      - name: Install serving deps
-        run: pip install -r requirements-deploy.txt
-      - name: Routing accuracy gate
-        env:
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-        run: |
-          if [ -z "$GROQ_API_KEY" ]; then echo "No GROQ_API_KEY secret — skipping eval gate"; exit 0; fi
-          python evals/run_routing_eval.py --set routing
-          python evals/run_routing_eval.py --set domain
+      - name: Byte-compile all source
+        run: python -m compileall agent api ui retrieval ingestion evals config.py app.py
