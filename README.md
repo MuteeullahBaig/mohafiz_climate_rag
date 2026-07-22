@@ -11,6 +11,18 @@ license: mit
 short_description: Bilingual agentic climate & disaster RAG for Pakistan
 ---
 
+---
+title: Mohafiz Climate RAG
+emoji: 🛡️
+colorFrom: blue
+colorTo: green
+sdk: gradio
+sdk_version: 6.20.0
+app_file: app.py
+pinned: false
+short_description: Bilingual agentic RAG for Pakistan climate, disaster & agriculture
+---
+
 # Mohafiz (محافظ)
 
 Bilingual (English + Urdu) **agentic RAG** assistant for Pakistan's climate reality — disaster
